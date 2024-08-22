@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Linkedin Shayan Shah (https://www.linkedin.com/in/shayan-shah-dev/)*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 30px 8%;
+
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 0 10px;
+  animation: op 1s ease forwards;
+}
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  margin: 0 10px;
+}
+.nav_links li {
+  margin: 0 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+}
+.nav_links .active {
+  color: #bb1a21;
+}
+.nav_links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #bb1a21;
+  top: 30px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.nav_links li a:hover::after {
+  width: 100%;
+}
+
+.buy_now {
+  font-family: sans-serif;
+  padding: 9px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  background: #bb1a21;
+  transition: 0.3s;
+}
+.buy_now i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 38%;
+  left: 9rem;
+}
+
+.main_text h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.main_text h1 span {
+  color: #bb1a21;
+}
+
+.main_text p {
+  max-width: 450px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.main_text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.main_text h3::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 4px;
+  background: #bb1a21;
+  top: 13px;
+  margin-left: 5px;
+}
+.main_img {
+  position: absolute;
+  top: -50%;
+  right: 7%;
+  margin-top: -50px;
+}
+
+.main_img img {
+  width: 100%;
+  animation: Mainimg 1s ease forwards;
+}
+
+.btn {
+  padding: 7px 15px;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  background: #bb1a21;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.site a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #bb1a21;
+  margin-left: 10px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s;
+}
+
+.site a:hover {
+  text-decoration: underline;
+}
+
+.site a i {
+  position: absolute;
+  font-size: 20px;
+  top: 3px;
+  color: black;
+  font-weight: 600;
+}
+
+.social {
+  position: absolute;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  left: -7.8%;
+  top: -20px;
+}
+
+.social span i {
+  font-size: 20px;
+  margin: 7px 2px;
+  background: #bb1a21;
+  padding: 5px;
+  border-radius: 50%;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social span i:hover {
+  background: transparent;
+  color: black;
+}
+
+@keyframes Mainimg {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
