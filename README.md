@@ -14,7 +14,7 @@ Language Uses: HTML, CSS
 
 ## Check Out The Website 👇
 
-Visit The Website🌐 [Sting Cold Drink Landing Page | Shayan Shah ](https://shayanshahdeveloper.github.io/Project-41-Sting-Landing-Page/)
+Visit The Website🌐 [Sting Cold Drink Landing Page | Shayan Shah ](#)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
